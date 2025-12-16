@@ -1,0 +1,782 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "You open a file that's messy but works. What's your first instinct?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "I can't work like this — it needs a rewrite.",
+          "archetypes": {
+            "rewrite-everything": 3,
+            "craftsman": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "It works. I'll add what I need and move on.",
+          "archetypes": {
+            "ship-it": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I want to understand why it works before touching anything.",
+          "archetypes": {
+            "detective": 3,
+            "historian": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I'll clean just enough to make the next person's life easier.",
+          "archetypes": {
+            "craftsman": 2,
+            "grow-the-junior": 2,
+            "glue-dev": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "A feature deadline is tomorrow, but the solution feels hacky.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Ship it — users matter more than elegance.",
+          "archetypes": {
+            "ship-it": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Push back on the deadline to do it right.",
+          "archetypes": {
+            "craftsman": 3,
+            "architecture-astronaut": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ship it, but document the debt clearly.",
+          "archetypes": {
+            "calm-senior": 2,
+            "glue-dev": 2,
+            "historian": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Prototype a cleaner version for later comparison.",
+          "archetypes": {
+            "experimenter": 3,
+            "architecture-astronaut": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "A junior developer asks a question you've answered before.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Answer quickly so they're unblocked.",
+          "archetypes": {
+            "glue-dev": 2,
+            "ship-it": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Sit with them and explain the reasoning step by step.",
+          "archetypes": {
+            "grow-the-junior": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Point them to docs or previous examples.",
+          "archetypes": {
+            "historian": 2,
+            "calm-senior": 1,
+            "ai-first-dev": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Suggest they try first and come back if stuck.",
+          "archetypes": {
+            "calm-senior": 2,
+            "experimenter": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Production is down.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Jump in immediately and start changing things.",
+          "archetypes": {
+            "ship-it": 2,
+            "experimenter": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Check logs, metrics, and recent deploys calmly.",
+          "archetypes": {
+            "calm-senior": 3,
+            "detective": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Coordinate who does what before touching code.",
+          "archetypes": {
+            "glue-dev": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Roll back first, analyze later.",
+          "archetypes": {
+            "calm-senior": 2,
+            "ship-it": 1,
+            "historian": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "You discover a critical bug that only appears in rare conditions.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "This will bother me until I understand exactly why it happens.",
+          "archetypes": {
+            "detective": 3,
+            "craftsman": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Patch it quickly — edge cases can wait.",
+          "archetypes": {
+            "ship-it": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "Reproduce it in isolation before touching prod code.",
+          "archetypes": {
+            "detective": 2,
+            "experimenter": 2,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Add monitoring first to learn more.",
+          "archetypes": {
+            "calm-senior": 2,
+            "architecture-astronaut": 2,
+            "ai-first-dev": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How do you usually feel about legacy code?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "It's technical debt waiting to be paid.",
+          "archetypes": {
+            "rewrite-everything": 3,
+            "craftsman": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "It's scary, but it works — don't anger it.",
+          "archetypes": {
+            "comfort-zone-keeper": 2,
+            "ship-it": 1,
+            "historian": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "It's a history book of past decisions.",
+          "archetypes": {
+            "historian": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "It's a puzzle to be carefully understood.",
+          "archetypes": {
+            "detective": 3,
+            "calm-senior": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "When reviewing a PR, you focus most on:",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Correctness and edge cases",
+          "archetypes": {
+            "detective": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Readability and naming",
+          "archetypes": {
+            "craftsman": 3,
+            "grow-the-junior": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Whether it solves the immediate problem",
+          "archetypes": {
+            "ship-it": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "How it fits the long-term architecture",
+          "archetypes": {
+            "architecture-astronaut": 3,
+            "historian": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "You're starting a new project from scratch.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Design the system and data flows first",
+          "archetypes": {
+            "architecture-astronaut": 3,
+            "craftsman": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Build a quick prototype to see what sticks",
+          "archetypes": {
+            "experimenter": 3,
+            "ship-it": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Set up tooling, tests, and structure early",
+          "archetypes": {
+            "craftsman": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Start coding and adjust as you go",
+          "archetypes": {
+            "ship-it": 2,
+            "experimenter": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Someone suggests using a brand-new library or framework.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Exciting — let's try it",
+          "archetypes": {
+            "experimenter": 3,
+            "ai-first-dev": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Only if it clearly solves a real problem",
+          "archetypes": {
+            "calm-senior": 3,
+            "craftsman": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "No, stability matters more",
+          "archetypes": {
+            "comfort-zone-keeper": 3,
+            "historian": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I'll research pros, cons, and past failures",
+          "archetypes": {
+            "historian": 2,
+            "detective": 2,
+            "calm-senior": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "You're asked a question about a system you worked on years ago.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "I don't remember, but here's where to look.",
+          "archetypes": {
+            "calm-senior": 2,
+            "glue-dev": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Oh yeah — that was added after that outage.",
+          "archetypes": {
+            "historian": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Let's inspect the code together.",
+          "archetypes": {
+            "detective": 2,
+            "grow-the-junior": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "That's deprecated — we should replace it.",
+          "archetypes": {
+            "rewrite-everything": 3,
+            "architecture-astronaut": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What frustrates you most during a sprint?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Rushed decisions",
+          "archetypes": {
+            "craftsman": 2,
+            "calm-senior": 2,
+            "architecture-astronaut": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Over-engineering",
+          "archetypes": {
+            "ship-it": 3,
+            "comfort-zone-keeper": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Poor communication between teams",
+          "archetypes": {
+            "glue-dev": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Unclear requirements",
+          "archetypes": {
+            "architecture-astronaut": 2,
+            "detective": 1,
+            "glue-dev": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "How do you usually approach documentation?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "I write it proactively",
+          "archetypes": {
+            "grow-the-junior": 2,
+            "glue-dev": 2,
+            "historian": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I write it if someone asks",
+          "archetypes": {
+            "ship-it": 2,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I prefer code to be self-documenting",
+          "archetypes": {
+            "craftsman": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I summarize or automate it when possible",
+          "archetypes": {
+            "ai-first-dev": 3,
+            "calm-senior": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "You're stuck understanding a large unfamiliar codebase.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Read everything from the entry point down",
+          "archetypes": {
+            "detective": 3,
+            "craftsman": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Use tools/AI to summarize and map it",
+          "archetypes": {
+            "ai-first-dev": 3,
+            "experimenter": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ask someone who knows the history",
+          "archetypes": {
+            "historian": 2,
+            "glue-dev": 1,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Run it and observe behavior",
+          "archetypes": {
+            "experimenter": 3,
+            "detective": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "A meeting is going off the rails.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Step in and clarify decisions",
+          "archetypes": {
+            "glue-dev": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Let it play out — action matters more",
+          "archetypes": {
+            "ship-it": 2,
+            "comfort-zone-keeper": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Reframe the discussion at a higher level",
+          "archetypes": {
+            "architecture-astronaut": 3,
+            "glue-dev": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Take notes and follow up afterward",
+          "archetypes": {
+            "calm-senior": 2,
+            "historian": 1,
+            "glue-dev": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "How do you feel about tests?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Essential and non-negotiable",
+          "archetypes": {
+            "craftsman": 3,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Useful, but only where it matters",
+          "archetypes": {
+            "calm-senior": 3,
+            "ship-it": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I add them after the feature works",
+          "archetypes": {
+            "ship-it": 3,
+            "experimenter": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I test through experiments and monitoring",
+          "archetypes": {
+            "experimenter": 2,
+            "ai-first-dev": 1,
+            "calm-senior": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "When code feels 'off,' your reaction is:",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Refactor until it feels right",
+          "archetypes": {
+            "craftsman": 3,
+            "rewrite-everything": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Leave it — vibes don't ship features",
+          "archetypes": {
+            "ship-it": 3,
+            "comfort-zone-keeper": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ask for a second opinion",
+          "archetypes": {
+            "glue-dev": 2,
+            "grow-the-junior": 1,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Dig until you understand the root issue",
+          "archetypes": {
+            "detective": 3,
+            "calm-senior": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "How do you usually help unblock others?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Pair program",
+          "archetypes": {
+            "grow-the-junior": 3,
+            "experimenter": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Explain concepts",
+          "archetypes": {
+            "calm-senior": 2,
+            "grow-the-junior": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Point to tools or resources",
+          "archetypes": {
+            "ai-first-dev": 2,
+            "historian": 1,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Remove dependencies and coordinate",
+          "archetypes": {
+            "glue-dev": 3,
+            "calm-senior": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "What kind of PRs do you usually create?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Small and focused",
+          "archetypes": {
+            "calm-senior": 3,
+            "craftsman": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Large but thorough",
+          "archetypes": {
+            "rewrite-everything": 2,
+            "architecture-astronaut": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Experimental or exploratory",
+          "archetypes": {
+            "experimenter": 3,
+            "ai-first-dev": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Clean and beautifully structured",
+          "archetypes": {
+            "craftsman": 3,
+            "architecture-astronaut": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "How do you feel about AI coding tools?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "I rely on them daily",
+          "archetypes": {
+            "ai-first-dev": 3,
+            "ship-it": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I use them selectively",
+          "archetypes": {
+            "calm-senior": 3,
+            "craftsman": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I'm cautious but curious",
+          "archetypes": {
+            "experimenter": 2,
+            "comfort-zone-keeper": 1,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I prefer human understanding",
+          "archetypes": {
+            "detective": 2,
+            "craftsman": 1,
+            "comfort-zone-keeper": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "At your best, your team would describe you as:",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Reliable under pressure",
+          "archetypes": {
+            "calm-senior": 3,
+            "glue-dev": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "A problem solver",
+          "archetypes": {
+            "detective": 2,
+            "experimenter": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "A mentor or connector",
+          "archetypes": {
+            "grow-the-junior": 2,
+            "glue-dev": 2,
+            "calm-senior": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "A visionary thinker",
+          "archetypes": {
+            "architecture-astronaut": 3,
+            "rewrite-everything": 1
+          }
+        }
+      ]
+    }
+  ]
+}

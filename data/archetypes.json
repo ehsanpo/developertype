@@ -1,0 +1,268 @@
+{
+  "archetypes": [
+    {
+      "id": "rewrite-everything",
+      "name": "The Rewrite Everything",
+      "tagline": "This could be so much better from scratch",
+      "description": "You're drawn to greenfield projects and reimagining systems. Legacy code feels like a puzzle you want to solve by replacing it. You see potential where others see constraints.",
+      "traits": [
+        "Energized by clean-slate opportunities",
+        "Frustrated by accumulated technical debt",
+        "Strong opinions on 'the right way' to build",
+        "Tends to underestimate migration complexity"
+      ],
+      "strengths": [
+        "Modernizes outdated systems",
+        "Brings fresh architectural perspectives",
+        "Not afraid to challenge status quo"
+      ],
+      "challenges": [
+        "May rewrite things that didn't need rewriting",
+        "Can undervalue institutional knowledge",
+        "Risk of creating new legacy in pursuit of perfection"
+      ]
+    },
+    {
+      "id": "ship-it",
+      "name": "The Ship It",
+      "tagline": "Done is better than perfect",
+      "description": "You have a bias for action and comfort with imperfection. Shipping features and learning from users matters more than architectural elegance. You keep teams moving forward.",
+      "traits": [
+        "Pragmatic about technical debt",
+        "User outcomes over code aesthetics",
+        "Comfortable with iteration",
+        "Impatient with over-planning"
+      ],
+      "strengths": [
+        "Delivers value quickly",
+        "Prevents analysis paralysis",
+        "Adaptable to changing requirements"
+      ],
+      "challenges": [
+        "May accumulate debt that slows future work",
+        "Can frustrate detail-oriented teammates",
+        "Sometimes underestimates long-term costs"
+      ]
+    },
+    {
+      "id": "detective",
+      "name": "The Detective",
+      "tagline": "I need to understand why first",
+      "description": "You're compelled to understand root causes before acting. Debugging is your element. You won't rest until you know exactly why something behaves the way it does.",
+      "traits": [
+        "Thorough in investigation",
+        "Uncomfortable with unexplained behavior",
+        "Excellent at reproducing edge cases",
+        "Digs deep into logs and stack traces"
+      ],
+      "strengths": [
+        "Finds bugs others miss",
+        "Builds robust mental models",
+        "Prevents recurring issues"
+      ],
+      "challenges": [
+        "Can over-investigate low-priority issues",
+        "May delay shipping to satisfy curiosity",
+        "Sometimes resistant to 'good enough' solutions"
+      ]
+    },
+    {
+      "id": "craftsman",
+      "name": "The Craftsman",
+      "tagline": "Code quality is my identity",
+      "description": "You care deeply about readability, naming, structure, and elegance. Code is communication. You leave every file better than you found it.",
+      "traits": [
+        "Strong opinions on style and naming",
+        "Writes self-documenting code",
+        "Values tests and maintainability",
+        "Takes pride in clean commits"
+      ],
+      "strengths": [
+        "Creates maintainable codebases",
+        "Raises team quality standards",
+        "Makes onboarding easier"
+      ],
+      "challenges": [
+        "Can over-polish at the expense of speed",
+        "May frustrate those prioritizing delivery",
+        "Sometimes attached to subjective preferences"
+      ]
+    },
+    {
+      "id": "calm-senior",
+      "name": "The Calm Senior",
+      "tagline": "I've seen this before",
+      "description": "You're unflappable under pressure. You've learned when to act fast and when to slow down. Context and priorities guide you more than urgency.",
+      "traits": [
+        "Calm during incidents",
+        "Strong prioritization instincts",
+        "Knows when to take shortcuts",
+        "Balances speed and quality naturally"
+      ],
+      "strengths": [
+        "Stabilizes teams during chaos",
+        "Makes sound judgments quickly",
+        "Mentors through example"
+      ],
+      "challenges": [
+        "May seem detached or slow to juniors",
+        "Can underestimate value of enthusiasm",
+        "Sometimes too comfortable with 'good enough'"
+      ]
+    },
+    {
+      "id": "experimenter",
+      "name": "The Experimenter",
+      "tagline": "Let's try it and see what happens",
+      "description": "You learn by doing. Prototypes, spikes, and experiments are how you think. You're comfortable breaking things in pursuit of understanding.",
+      "traits": [
+        "Learns through hands-on exploration",
+        "Comfortable with ambiguity",
+        "Embraces failure as feedback",
+        "Often works in branches and throwaway code"
+      ],
+      "strengths": [
+        "Discovers unconventional solutions",
+        "De-risks new technologies quickly",
+        "Energizes innovation"
+      ],
+      "challenges": [
+        "Experiments may not reach production",
+        "Can leave unfinished prototypes behind",
+        "May undervalue planning and design phases"
+      ]
+    },
+    {
+      "id": "glue-dev",
+      "name": "The Glue Dev",
+      "tagline": "I'll make sure we're aligned",
+      "description": "You unlock others by coordinating, clarifying, and connecting. You see gaps in communication and fill them. Teams run smoother when you're involved.",
+      "traits": [
+        "Facilitates cross-team work",
+        "Clarifies requirements and decisions",
+        "Comfortable in meetings and docs",
+        "Values team velocity over personal output"
+      ],
+      "strengths": [
+        "Prevents misalignment and rework",
+        "Makes distributed teams effective",
+        "Often trusted as tech lead or liaison"
+      ],
+      "challenges": [
+        "Glue work is often invisible",
+        "May write less code than peers",
+        "Risk of burnout from context switching"
+      ]
+    },
+    {
+      "id": "grow-the-junior",
+      "name": "The Grow the Junior",
+      "tagline": "Let me show you how this works",
+      "description": "You're a patient teacher invested in team growth. You see potential in others and take time to explain reasoning, not just solutions.",
+      "traits": [
+        "Patient with repeated questions",
+        "Explains the 'why' not just the 'how'",
+        "Invested in others' career growth",
+        "Comfortable pair programming"
+      ],
+      "strengths": [
+        "Builds capable, confident teams",
+        "Creates multiplier effect long-term",
+        "Improves team culture and knowledge sharing"
+      ],
+      "challenges": [
+        "Teaching takes time from delivery",
+        "May be over-relied upon for help",
+        "Can be frustrated by lack of curiosity"
+      ]
+    },
+    {
+      "id": "historian",
+      "name": "The Historian",
+      "tagline": "That was added after the 2019 outage",
+      "description": "You're the living memory of the codebase. You know why decisions were made, what was tried before, and which skeletons are in which closets.",
+      "traits": [
+        "Remembers context others have forgotten",
+        "Values documentation and continuity",
+        "Cautious about repeating past mistakes",
+        "Often consulted for 'why does X exist?'"
+      ],
+      "strengths": [
+        "Prevents repeated failures",
+        "Provides critical context for decisions",
+        "Bridges knowledge gaps during turnover"
+      ],
+      "challenges": [
+        "May resist change due to past failures",
+        "Can become a single point of failure",
+        "Sometimes anchored to outdated context"
+      ]
+    },
+    {
+      "id": "architecture-astronaut",
+      "name": "The Architecture Astronaut",
+      "tagline": "How does this fit the bigger picture?",
+      "description": "You think in systems, patterns, and long-term design. You're drawn to abstractions and frameworks. You see how pieces should fit together.",
+      "traits": [
+        "Thinks in diagrams and layers",
+        "Values extensibility and modularity",
+        "Drawn to design patterns and principles",
+        "Comfortable with high-level discussions"
+      ],
+      "strengths": [
+        "Designs scalable, maintainable systems",
+        "Prevents architectural drift",
+        "Strong at system-level problem solving"
+      ],
+      "challenges": [
+        "Can over-engineer simple problems",
+        "May prioritize elegance over delivery",
+        "Sometimes disconnected from user needs"
+      ]
+    },
+    {
+      "id": "ai-first-dev",
+      "name": "The AI-First Dev",
+      "tagline": "I'll ask AI to scaffold this",
+      "description": "You embrace AI tools, automation, and augmentation. You're comfortable offloading boilerplate and learning through generated code. You see AI as a teammate.",
+      "traits": [
+        "Heavy user of Copilot/AI tools",
+        "Comfortable with generated code",
+        "Values speed and automation",
+        "Learns by asking and iterating"
+      ],
+      "strengths": [
+        "Extremely productive on new codebases",
+        "Quick to adopt new tools",
+        "Efficient at boilerplate and repetitive tasks"
+      ],
+      "challenges": [
+        "May rely too much on generated patterns",
+        "Can miss learning deeper fundamentals",
+        "Sometimes ships code they don't fully understand"
+      ]
+    },
+    {
+      "id": "comfort-zone-keeper",
+      "name": "The Comfort Zone Keeper",
+      "tagline": "Let's stick with what we know works",
+      "description": "You prefer mastery over novelty. You value stability, proven tools, and deep expertise. You're skeptical of trends and prefer building on solid ground.",
+      "traits": [
+        "Skeptical of new frameworks",
+        "Values deep expertise over breadth",
+        "Prefers boring, reliable technology",
+        "Comfortable saying 'no' to complexity"
+      ],
+      "strengths": [
+        "Builds on stable foundations",
+        "Resists hype-driven decisions",
+        "Deep knowledge of core technologies"
+      ],
+      "challenges": [
+        "May miss genuinely useful innovations",
+        "Can seem resistant to change",
+        "Sometimes anchored to outdated tools"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+.results-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.loading h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 25px;
+  max-width: 900px;
+}
+
+.archetype-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.archetype-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.secondary-badge {
+  background: #4a5568 !important;
+}
+
+.archetype-name {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.archetype-tagline {
+  font-size: 1.3rem;
+  color: #718096;
+  font-style: italic;
+}
+
+.archetype-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  color: #2d3748;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section li {
+  padding: 12px 0;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 25px;
+}
+
+.section li::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  color: #667eea;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.secondary-archetype {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-left: 4px solid #667eea;
+}
+
+.secondary-archetype .archetype-name {
+  font-size: 1.8rem;
+}
+
+.secondary-archetype .archetype-tagline {
+  font-size: 1.1rem;
+}
+
+.insights-card {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  border-left: 4px solid #f56565;
+}
+
+.insight-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.insight-item h4 {
+  font-size: 1rem;
+  color: #2d3748;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.insight-item p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.combination-summary {
+  background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+  border-left: 4px solid #38b2ac;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 0 auto 25px;
+  max-width: 900px;
+}
+
+.combination-summary p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #234e52;
+  margin: 0;
+}
+
+.score-bars {
+  margin-top: 20px;
+}
+
+.score-bar {
+  margin-bottom: 12px;
+}
+
+.score-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.score-track {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+.secondary-fill {
+  background: #718096 !important;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  flex: 1;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e0;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 25px;
+  }
+
+  .archetype-name {
+    font-size: 1.8rem;
+  }
+
+  .archetype-tagline {
+    font-size: 1.1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
