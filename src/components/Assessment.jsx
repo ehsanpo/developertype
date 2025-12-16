@@ -13,7 +13,17 @@ function Assessment() {
   const progress = ((currentQuestion + 1) / questions.length) * 100
 
   const selectAnswer = (questionId, answerId) => {
-    setAnswers({ ...answers, [questionId]: answerId })
+    const newAnswers = { ...answers, [questionId]: answerId }
+    setAnswers(newAnswers)
+    
+    setTimeout(() => {
+      if (currentQuestion === questions.length - 1) {
+        localStorage.setItem('assessment-answers', JSON.stringify(newAnswers))
+        navigate('/results')
+      } else {
+        setCurrentQuestion(currentQuestion + 1)
+      }
+    }, 300)
   }
 
   const nextQuestion = () => {

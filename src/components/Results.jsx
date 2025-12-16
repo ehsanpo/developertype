@@ -1,14 +1,32 @@
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { generateResult, getCombinationSummary } from '../utils/scoring'
+import html2canvas from 'html2canvas'
 import './Results.css'
 
 function Results() {
   const navigate = useNavigate()
+  const [searchParams, setSearchParams] = useSearchParams()
   const [result, setResult] = useState(null)
   const [loading, setLoading] = useState(true)
+  const resultsRef = useRef(null)
 
   useEffect(() => {
+    const sharedResult = searchParams.get('r')
+    
+    if (sharedResult) {
+      try {
+        const decoded = atob(sharedResult)
+        const answers = JSON.parse(decoded)
+        const calculatedResult = generateResult(answers)
+        setResult(calculatedResult)
+        setLoading(false)
+        return
+      } catch (e) {
+        console.error('Invalid shared result')
+      }
+    }
+
     const answersJson = localStorage.getItem('assessment-answers')
     if (!answersJson) {
       navigate('/')
@@ -21,20 +39,57 @@ function Results() {
       const calculatedResult = generateResult(answers)
       setResult(calculatedResult)
       setLoading(false)
+      
+      const encoded = btoa(answersJson)
+      setSearchParams({ r: encoded }, { replace: true })
     }, 1200)
-  }, [navigate])
+  }, [navigate, searchParams, setSearchParams])
+
+  const getShareableUrl = () => {
+    return window.location.href
+  }
 
   const shareResults = () => {
-    const text = `I just discovered my Developer Type: ${result.primary.name} 🧠\n\nFind yours at: ${window.location.origin}`
+    const shareUrl = getShareableUrl()
+    const text = `I just discovered my Developer Type: ${result.primary.name} 🧠\n\nFind yours at: ${shareUrl}`
     
     if (navigator.share) {
       navigator.share({
         title: 'Developer Type Assessment',
-        text: text
+        text: text,
+        url: shareUrl
       })
     } else {
       navigator.clipboard.writeText(text)
       alert('Results copied to clipboard!')
+    }
+  }
+
+  const shareToLinkedIn = () => {
+    const shareUrl = getShareableUrl()
+    const text = `I just discovered my Developer Type: ${result.primary.name} 🧠`
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`
+    window.open(linkedInUrl, '_blank', 'width=600,height=600')
+  }
+
+  const downloadAsImage = async () => {
+    if (!resultsRef.current) return
+    
+    try {
+      const canvas = await html2canvas(resultsRef.current, {
+        backgroundColor: '#222831',
+        scale: 2,
+        logging: false,
+        useCORS: true
+      })
+      
+      const link = document.createElement('a')
+      link.download = `developer-type-${result.primary.id}.png`
+      link.href = canvas.toDataURL('image/png')
+      link.click()
+    } catch (error) {
+      console.error('Error generating image:', error)
+      alert('Failed to generate image. Please try again.')
     }
   }
 
@@ -61,6 +116,7 @@ function Results() {
         <h1>✨ Your Developer Type</h1>
       </div>
 
+      <div ref={resultsRef}>
       <div className="card">
         <div className="badge-card">
           <div className="badge-image-container">
@@ -189,14 +245,21 @@ function Results() {
           </div>
         </div>
       )}
+      </div>
 
       <div className="card">
         <div className="actions">
           <button className="btn-secondary" onClick={() => navigate('/')}>
             Take Again
           </button>
+          <button className="btn-primary" onClick={downloadAsImage}>
+            Download as Image
+          </button>
+          <button className="btn-primary" onClick={shareToLinkedIn}>
+            Share on LinkedIn
+          </button>
           <button className="btn-primary" onClick={shareResults}>
-            Share Results
+            Copy Link
           </button>
         </div>
       </div>
