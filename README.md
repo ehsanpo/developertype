@@ -8,7 +8,7 @@ Visit [https://ehsanpo.github.io/developertype/](https://ehsanpo.github.io/devel
 
 ## 🧠 What This Is
 
-This is **not** a skills test. It's a psychological assessment designed to reveal your instincts, default behaviors, and natural tendencies as a developer. Every question forces a trade-off — there are no objectively correct answers.
+This is **not** a skills test. It's a psychological assessment designed to reveal your instincts, default behaviors, and natural tendencies as a developer. Every question forces a trade-off - there are no objectively correct answers.
 
 ## ✨ Features
 

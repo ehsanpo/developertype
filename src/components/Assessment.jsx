@@ -56,12 +56,12 @@ function Assessment() {
           Question {currentQuestion + 1} of {questions.length}
         </div>
 
-        <div className="question">
+        <div className="question" key={question.id}>
           <h2>{question.question}</h2>
           <div className="answers">
             {question.answers.map((answer) => (
               <div
-                key={answer.id}
+                key={`${question.id}-${answer.id}`}
                 className={`answer ${answers[question.id] === answer.id ? 'selected' : ''}`}
                 onClick={() => selectAnswer(question.id, answer.id)}
               >

@@ -19,23 +19,23 @@ function Intro() {
             your instincts, default behaviors, and natural tendencies as a developer.
           </p>
           <p>
-            Every question forces a trade-off — there are no objectively correct answers. 
+            Every question forces a trade-off - there are no objectively correct answers. 
             Your choices will reveal patterns that map to one of 12 developer archetypes.
           </p>
 
           <h2>What you'll discover:</h2>
           <ul>
-            <li><strong>Your primary archetype</strong> — your core developer identity</li>
-            <li><strong>Your secondary influence</strong> — the nuance in your style</li>
-            <li><strong>Your natural tensions</strong> — competing instincts you balance</li>
-            <li><strong>How you work best</strong> — solo, collaborative, fast, methodical</li>
+            <li><strong>Your primary archetype</strong> - your core developer identity</li>
+            <li><strong>Your secondary influence</strong> - the nuance in your style</li>
+            <li><strong>Your natural tensions</strong> - competing instincts you balance</li>
+            <li><strong>How you work best</strong> - solo, collaborative, fast, methodical</li>
           </ul>
 
           <h2>How it works:</h2>
           <ul>
             <li>20 questions, each with 4 choices</li>
             <li>Takes ~5 minutes</li>
-            <li>Answer instinctively — your first reaction is usually most accurate</li>
+            <li>Answer instinctively - your first reaction is usually most accurate</li>
             <li>Results feel scarily accurate</li>
           </ul>
         </div>

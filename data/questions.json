@@ -6,7 +6,7 @@
       "answers": [
         {
           "id": "A",
-          "text": "I can't work like this — it needs a rewrite.",
+          "text": "I can't work like this - it needs a rewrite.",
           "archetypes": {
             "rewrite-everything": 3,
             "craftsman": 2
@@ -44,8 +44,8 @@
       "question": "A feature deadline is tomorrow, but the solution feels hacky.",
       "answers": [
         {
-          "id": "A",
-          "text": "Ship it — users matter more than elegance.",
+          "id": "C",
+          "text": "Ship it - users matter more than elegance.",
           "archetypes": {
             "ship-it": 3,
             "calm-senior": 1
@@ -169,8 +169,8 @@
           }
         },
         {
-          "id": "B",
-          "text": "Patch it quickly — edge cases can wait.",
+          "id": "C",
+          "text": "Patch it quickly - edge cases can wait.",
           "archetypes": {
             "ship-it": 3
           }
@@ -208,8 +208,8 @@
           }
         },
         {
-          "id": "B",
-          "text": "It's scary, but it works — don't anger it.",
+          "id": "D",
+          "text": "It's scary, but it works - don't anger it.",
           "archetypes": {
             "comfort-zone-keeper": 2,
             "ship-it": 1,
@@ -315,8 +315,8 @@
       "question": "Someone suggests using a brand-new library or framework.",
       "answers": [
         {
-          "id": "A",
-          "text": "Exciting — let's try it",
+          "id": "B",
+          "text": "Exciting - let's try it",
           "archetypes": {
             "experimenter": 3,
             "ai-first-dev": 1
@@ -363,7 +363,7 @@
         },
         {
           "id": "B",
-          "text": "Oh yeah — that was added after that outage.",
+          "text": "Oh yeah - that was added after that outage.",
           "archetypes": {
             "historian": 3,
             "calm-senior": 1
@@ -378,8 +378,8 @@
           }
         },
         {
-          "id": "D",
-          "text": "That's deprecated — we should replace it.",
+          "id": "C",
+          "text": "That's deprecated - we should replace it.",
           "archetypes": {
             "rewrite-everything": 3,
             "architecture-astronaut": 1
@@ -518,8 +518,8 @@
           }
         },
         {
-          "id": "B",
-          "text": "Let it play out — action matters more",
+          "id": "D",
+          "text": "Let it play out - action matters more",
           "archetypes": {
             "ship-it": 2,
             "comfort-zone-keeper": 1
@@ -596,8 +596,8 @@
           }
         },
         {
-          "id": "B",
-          "text": "Leave it — vibes don't ship features",
+          "id": "D",
+          "text": "Leave it - vibes don't ship features",
           "archetypes": {
             "ship-it": 3,
             "comfort-zone-keeper": 1
