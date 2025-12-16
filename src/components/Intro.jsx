@@ -40,9 +40,14 @@ function Intro() {
           </ul>
         </div>
 
-        <button className="btn-primary" onClick={() => navigate('/assessment')}>
-          Start Assessment →
-        </button>
+        <div className="button-group">
+          <button className="btn-primary" onClick={() => navigate('/assessment')}>
+            Start Assessment →
+          </button>
+          <button className="btn-secondary" onClick={() => navigate('/style-guide')}>
+            View All Archetypes
+          </button>
+        </div>
       </div>
     </div>
   )

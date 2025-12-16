@@ -17,7 +17,6 @@ function Results() {
 
     const answers = JSON.parse(answersJson)
     
-    // Simulate loading for effect
     setTimeout(() => {
       const calculatedResult = generateResult(answers)
       setResult(calculatedResult)
@@ -62,44 +61,24 @@ function Results() {
         <h1>✨ Your Developer Type</h1>
       </div>
 
-      {/* Primary Archetype */}
       <div className="card">
-        <div className="archetype-header">
-          <div className="archetype-badge">Your Primary Type</div>
-          <h2 className="archetype-name">{result.primary.name}</h2>
-          <p className="archetype-tagline">"{result.primary.tagline}"</p>
+        <div className="badge-card">
+          <div className="badge-image-container">
+            <img 
+              src={`/developertype/badges/${result.primary.id}.jpg`} 
+              alt={result.primary.name}
+              className="badge-image"
+            />
+            <div className="badge-label">Your Primary Type</div>
+          </div>
+          
+          <div className="badge-content">
+            <h2 className="archetype-name">{result.primary.name}</h2>
+            <p className="archetype-tagline">"{result.primary.tagline}"</p>
+            <p className="archetype-description">{result.primary.description}</p>
+          </div>
         </div>
-
-        <p className="archetype-description">{result.primary.description}</p>
-
-        <div className="section">
-          <h3>🎯 Core Traits</h3>
-          <ul>
-            {result.primary.traits.map((trait, i) => (
-              <li key={i}>{trait}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="section">
-          <h3>💪 Your Strengths</h3>
-          <ul>
-            {result.primary.strengths.map((strength, i) => (
-              <li key={i}>{strength}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="section">
-          <h3>⚠️ Watch Out For</h3>
-          <ul>
-            {result.primary.challenges.map((challenge, i) => (
-              <li key={i}>{challenge}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="score-bars">
+          <div className="score-bars">
           <div className="score-bar">
             <div className="score-label">
               <span>Primary Archetype Match</span>
@@ -110,32 +89,64 @@ function Results() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Combination Summary */}
-      <div className="combination-summary">
-        <p><strong>Your Unique Blend:</strong> {combination}</p>
-      </div>
+        <div className="grid">
+            <div className="section">
+            <h3>🎯 Core Traits</h3>
+            <ul>
+                {result.primary.traits.map((trait, i) => (
+                <li key={i}>{trait}</li>
+                ))}
+            </ul>
+            </div>
 
-      {/* Secondary Archetype */}
-      <div className="card secondary-archetype">
-        <div className="archetype-header">
-          <div className="archetype-badge secondary-badge">Secondary Influence</div>
-          <h2 className="archetype-name">{result.secondary.name}</h2>
-          <p className="archetype-tagline">"{result.secondary.tagline}"</p>
+            <div className="section">
+            <h3>💪 Your Strengths</h3>
+            <ul>
+                {result.primary.strengths.map((strength, i) => (
+                <li key={i}>{strength}</li>
+                ))}
+            </ul>
+            </div>
+
+
         </div>
 
-        <p className="archetype-description">{result.secondary.description}</p>
 
         <div className="section">
-          <h3>🎯 Additional Traits</h3>
+          <h3>⚠️ Watch Out For</h3>
           <ul>
-            {result.secondary.traits.slice(0, 3).map((trait, i) => (
-              <li key={i}>{trait}</li>
+            {result.primary.challenges.map((challenge, i) => (
+              <li key={i}>{challenge}</li>
             ))}
           </ul>
         </div>
 
+      
+      </div>
+
+      <div className="combination-summary">
+        <p><strong>Your Unique Blend:</strong> {combination}</p>
+      </div>
+
+      <div className="card secondary-archetype">
+        <div className="badge-card">
+          <div className="badge-image-container">
+            <img 
+              src={`/developertype/badges/${result.secondary.id}.jpg`} 
+              alt={result.secondary.name}
+              className="badge-image"
+            />
+            <div className="badge-label secondary">Secondary Influence</div>
+          </div>
+          
+          <div className="badge-content">
+            <h2 className="archetype-name">{result.secondary.name}</h2>
+            <p className="archetype-tagline">"{result.secondary.tagline}"</p>
+            <p className="archetype-description">{result.secondary.description}</p>
+          </div>
+        </div>
+        
         <div className="score-bars">
           <div className="score-bar">
             <div className="score-label">
@@ -147,9 +158,18 @@ function Results() {
             </div>
           </div>
         </div>
+
+        <div className="section">
+          <h3>🎯 Additional Traits</h3>
+          <ul>
+            {result.secondary.traits.slice(0, 3).map((trait, i) => (
+              <li key={i}>{trait}</li>
+            ))}
+          </ul>
+        </div>
+
       </div>
 
-      {/* Insights */}
       {(result.insights.tensions.length > 0 || result.insights.traits.length > 0) && (
         <div className="card insights-card">
           <div className="section">
@@ -170,7 +190,6 @@ function Results() {
         </div>
       )}
 
-      {/* Actions */}
       <div className="card">
         <div className="actions">
           <button className="btn-secondary" onClick={() => navigate('/')}>

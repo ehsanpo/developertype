@@ -4,7 +4,7 @@ A psychological assessment that reveals developer instincts, trade-offs, and nat
 
 ## 🚀 Live Demo
 
-Visit [https://yourusername.github.io/developertype/](https://yourusername.github.io/developertype/)
+Visit [https://ehsanpo.github.io/developertype/](https://ehsanpo.github.io/developertype/)
 
 ## 🧠 What This Is
 
@@ -90,6 +90,10 @@ This will build the app and push to the `gh-pages` branch.
 10. The Architecture Astronaut
 11. The AI-First Dev
 12. The Comfort Zone Keeper
+
+## 💡 Inspiration
+
+This assessment was inspired by the article [The 12 Developer Mindsets I've Seen in My Career](https://dev.to/notadevbuthere/the-12-developer-mindsets-ive-seen-in-my-career-and-what-they-teach-us-about-building-software-42de) by [@notadevbuthere](https://dev.to/notadevbuthere). The archetypes and core concepts are based on real developer behaviors and patterns observed in software teams.
 
 ## 📝 License
 

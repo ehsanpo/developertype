@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Intro from './components/Intro'
 import Assessment from './components/Assessment'
 import Results from './components/Results'
+import StyleGuide from './components/StyleGuide'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Route path="/" element={<Intro />} />
       <Route path="/assessment" element={<Assessment />} />
       <Route path="/results" element={<Results />} />
+      <Route path="/style-guide" element={<StyleGuide />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

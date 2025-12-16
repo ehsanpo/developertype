@@ -1,3 +1,12 @@
+:root {
+  --primary: #00ADB5;
+  --secondary: #AAE3E2;
+  --text: #EEEEEE;
+  --accent: #AC7DD2;
+  --bg: #222831;
+  --defaultColor: #fdf6fd;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,8 +15,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+
+p {
+  color: var(--text);
+}
+
+span {
+  color: var(--accent);
 }
